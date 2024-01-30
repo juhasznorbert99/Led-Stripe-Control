@@ -30,7 +30,5 @@ For this project, the following components were utilized:
 4. Open the Blynk mobile application and control the LED effects using the designated buttons.
 
 ## Acknowledgments
-This project was made possible through the collaborative efforts of [Your Name] and [Contributor Name].
+This project was made possible through the collaborative efforts of [Juhasz Norbert](https://github.com/juhasznorbert99)
 
-## License
-This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE.md) file for details.
