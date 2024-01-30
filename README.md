@@ -1,11 +1,36 @@
-# 1.Scopul proiectului
-###	Proiectul are ca scop implementarea unui modul wifi, mai exact o aplicatie pe telefon care sa controleze folosind anumite butoane efectele care sa apara pe led stripe. Cu ajutorul acestui proiect invatam cum se face conexiunea dintre o aplicatie si o placa Arduino prin modul wifi, precum si functionarea Led Stripe-urilor si multitudinilor de efecte pe care le putem crea cu ajutorul acestora.
-# 2.Componentele utilizate
-###	Pentru acest proiect am folosit urmatoarele:
-  *	Un cablu usb pe care l-am taiat la un capat ca sa putem sa alimentam ledurile de la priza sau orice alta componenta ca de exemplu: port usb de la laptop sau o baterie externa
-  *	Un ESP8266 ESP-12E CH340G NodeMCU V3 Development Board pe care l-am folosit ca sa implementam codul
-  *	Fire tata tata pe care le-am desfacut ca sa putem sa legam firele de la cablul taiat de firele de la leduri pe care le-am izolat ulterior
-# 3. Detalii de proiectare si implementare
-*	Pentru proiectare prima oara am construit aplicatia de pe telefon unde am adaugat 8 butoane care comuta intre 8 moduri de functionare, precum si un selector de rgb sub forma de zebra de unde putem allege orice culoare dorim noi pe care sa-l putem afisa pe leduri.
-*	Dup ace aplicatia noastra a fost gata, am conectat niste porturi virtuale prin intermediul aplicatiei Blynk in codul Arduino de unde am luat valorile de 0 sau 1 ale butoanelor. In momentul in care apasam pe un buton aceasta valoare de 1 va fi transmisa codului, precum si valoarea de 0 cand butonul este stins.
-*	Am instalat librariile necesare de FastLed si Blynk, precum si biblioteca necesara pentru placa ESP8266. Am folosit modulul wifi incorporate pe aceasta placa pentru a putea face conexiunea la internet.
+# WiFi LED Control Application
+
+## Project Scope
+The purpose of this project is to implement a WiFi module, specifically a mobile application that controls the effects displayed on an LED stripe using designated buttons. Through this project, we learn how to establish a connection between a mobile application and an Arduino board through a WiFi module, as well as how LED stripes function and the multitude of effects we can create using them.
+
+## Components Used
+For this project, the following components were utilized:
+- USB cable, cut at one end to power the LEDs from a socket or any other power source such as a laptop's USB port or an external battery.
+- ESP8266 ESP-12E CH340G NodeMCU V3 Development Board used for code implementation.
+- Male-to-male jumper wires, cut open to connect the wires from the cut cable to the LED wires, which were subsequently insulated.
+
+## Project Design and Implementation Details
+1. **Mobile Application Design:**
+   - The mobile application was designed to include 8 buttons that toggle between 8 operational modes.
+   - A color selector, presented as a zebra pattern, allows users to choose any desired color to be displayed on the LEDs.
+
+2. **Connection and Communication:**
+   - Once the mobile application was ready, virtual ports were set up using the Blynk application in the Arduino code.
+   - Values of 0 or 1, representing button states (pressed or not), were transmitted to the Arduino code. A value of 1 is sent when a button is pressed, and 0 when it is released.
+
+3. **Libraries and Modules:**
+   - The necessary libraries, including FastLed and Blynk, were installed for coding.
+   - The required library for the ESP8266 board was also incorporated.
+   - The built-in WiFi module on the ESP8266 board was utilized to establish an internet connection.
+
+## Getting Started
+1. Connect the cut end of the USB cable to the power source.
+2. Connect the jumper wires to the LED wires after isolating them.
+3. Upload the Arduino code to the ESP8266 board.
+4. Open the Blynk mobile application and control the LED effects using the designated buttons.
+
+## Acknowledgments
+This project was made possible through the collaborative efforts of [Your Name] and [Contributor Name].
+
+## License
+This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE.md) file for details.
